@@ -1,7 +1,7 @@
 import React from 'react';
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2';
-import './Contact.css';
+import './contact.css';
 import photo2 from '../../../assets/photo2.jpg';
 
 function Contact() {
