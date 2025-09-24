@@ -1,0 +1,163 @@
+.banner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem 6rem;
+  background: linear-gradient(135deg, #B76CFD, #E869C6, #F7DFFE); /* Gradient قريب من الباك */
+  border-radius: 1.5rem;
+  margin: 2rem auto;
+  max-width: 1200px;
+  gap: 3rem;
+  overflow: hidden;
+  z-index: 0;
+  color: #fff;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  margin-top: 100px;
+}
+
+.banner-text {
+  flex: 1;
+  padding-right: 2rem;
+  text-align: left;
+}
+
+
+
+.banner-text ul {
+  list-style-position: inside; 
+  list-style-type: disc;        
+  padding-right: 1.5rem;        
+    margin: 0 auto 2rem auto;     
+  max-width: 700px;             
+  color: black;               
+   line-height: 1.8;            
+  text-align: right;           
+  direction: rtl;    
+  font-weight: bold;           
+}
+
+.banner-text li {
+  font-size: 1.6rem;          
+    margin-bottom: 1rem;        
+}
+
+
+.banner-btn {
+background: linear-gradient(360deg,#b76cfd, #e869c6);
+  color: #222222;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 2rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: 0.3s;
+  display: block;
+  margin: 0 auto;
+  font-weight: bold;
+}
+
+.banner-btn:hover {
+background: linear-gradient(90deg,#b76cfd, #e869c6);
+  transform: translateY(-2px);
+  color: white;
+}
+
+.banner-img {
+  flex: 1;
+  text-align: right;
+}
+
+.banner-img img {
+  max-width: 550px;
+  border-radius: 1rem;
+  filter: drop-shadow(0 6px 15px rgba(0,0,0,0.2));
+  transition: transform 0.3s ease-in-out;
+
+}
+.banner-img img:hover {
+  transform: scale(1.05);
+}
+
+/* Media Queries */
+
+/* تابلت */
+@media (max-width: 1024px) {
+  .banner {
+    padding: 2rem 3rem;
+    gap: 2rem;
+  }
+
+  .banner-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .banner-text p {
+    font-size: 1rem;
+  }
+
+  .banner-img img {
+    max-width: 300px;
+  }
+}
+
+/* موبايل */
+@media (max-width: 768px) {
+  .banner {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .banner-text {
+    padding-right: 0;
+  }
+
+  .banner-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .banner-text p {
+    font-size: 0.95rem;
+  }
+
+  .banner-btn {
+    font-size: 1rem;
+    padding: 0.7rem 1.8rem;
+  }
+
+  .banner-img {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .banner-img img {
+    max-width: 250px;
+  }
+}
+
+/* موبايل صغير جداً */
+@media (max-width: 480px) {
+  .banner {
+    padding: 1.5rem;
+    gap: 1rem;
+  }
+
+  .banner-text h1 {
+    font-size: 1.5rem;
+  }
+
+  .banner-text p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .banner-btn {
+    font-size: 0.9rem;
+    padding: 0.6rem 1.5rem;
+  }
+
+  .banner-img img {
+    max-width: 200px;
+  }
+}

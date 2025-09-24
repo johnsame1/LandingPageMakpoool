@@ -1,0 +1,85 @@
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  margin-top: 2.5rem;
+  flex-wrap: wrap; 
+padding-bottom: 50px;
+}
+
+.form-image img {
+  max-width: 300px;
+  width: 100%;
+  border-radius: 1rem;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+
+.form-container form {
+  padding: 2.8rem 2.5rem;
+  border-radius: 1.5rem;
+  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.08); 
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 500px; 
+}
+
+.form-container input {
+  padding: 1rem;
+  font-size: 1.05rem;
+  border-radius: 0.9rem;
+  border: none;
+  outline: none;
+  background: #f7edff; 
+  color: #333;
+  transition: 0.3s;
+  width: 93%;
+  direction: rtl;
+}
+
+.form-container input:focus {
+  box-shadow: 0 0 12px #d8b4fe;
+  background: #fff;
+}
+
+.form-container button {
+  padding: 1rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.9rem;
+  cursor: pointer;
+  background: linear-gradient(90deg, #b76cfd, #e869c6, #f7dffe);
+  color: #fff;
+  width: 100%; /* زرار بنفس عرض الـ inputs */
+  transition: transform 0.2s ease, box-shadow 0.3s ease, opacity 0.3s;
+}
+
+.form-container button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(183, 108, 253, 0.45);
+  opacity: 0.95;
+}
+
+/* موبايل */
+@media (max-width: 600px) {
+  .form-container form {
+    padding: 1.5rem;
+    max-width: 90%;
+  }
+
+  .form-container input,
+  .form-container button {
+    font-size: 1rem;
+    padding: 0.9rem;
+  }
+}

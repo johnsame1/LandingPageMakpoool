@@ -1,0 +1,138 @@
+/* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  margin: 20px auto; 
+  background: linear-gradient(290deg, #c184fb, #eb6bc8);
+  color: #fff;
+  width: 90%;
+  max-width: 1200px; 
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+  z-index: 1000; 
+  position: fixed ;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+
+/* Logo text */
+.logo {
+  font-size: 2.5rem;
+  font-weight: bold;
+  background: linear-gradient(
+    90deg,
+    #B76CFD 0%,
+    #ffffff 50%,
+    #B76CFD 100%
+  );
+  background-size: 200% auto; 
+  color: #B76CFD;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s linear infinite;
+}
+
+@keyframes shine {
+  from {
+    background-position: -200% center;
+  }
+  to {
+    background-position: 200% center;
+  }
+}
+
+/* Social icons container */
+.social {
+  display: flex;
+  gap: 18px;
+}
+
+/* General icon style */
+.icon {
+  font-size: 28px;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+  cursor: pointer;
+  color: #2B2B2B;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+}
+
+/* Specific colors on hover */
+.facebook:hover {
+  color: #006eff; /* Blue */
+}
+
+.whatsapp:hover {
+  color: #25D366; /* Teal */
+}
+
+.instagram:hover {
+  color: #ff7bb6; /* fallback color */
+  background: linear-gradient(45deg, #F58529, #DD2A7B, #8134AF, #515BD4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* Navbar responsive */
+@media (max-width: 1024px) {
+  .navbar {
+    align-items: center;
+    padding: 12px 16px;
+    width: 95%;
+  }
+
+  .logo {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .social {
+    margin-top: 10px;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px 12px;
+    border-radius: 15px;
+  }
+
+  .logo {
+    font-size: 1.8rem;
+  }
+
+  .social {
+    gap: 12px;
+  }
+
+  .icon {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 8px 10px;
+    margin: 10px 0;
+    flex-direction: column;
+
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .social {
+    gap: 10px;
+  }
+
+  .icon {
+    font-size: 20px;
+  }
+}
