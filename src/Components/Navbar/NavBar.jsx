@@ -1,4 +1,4 @@
-import "./Navbar.css";
+import "./NavBar.css";
 import { FaFacebook, FaWhatsapp, FaInstagram } from "react-icons/fa";
 
 function Navbar() {
