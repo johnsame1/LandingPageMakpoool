@@ -37,6 +37,8 @@ function Contact() {
 
   return (
     <>
+    <section id="contact">
+
       <h1 className="logo" style={{ textAlign: 'center' }}>
         Contact us
       </h1>
@@ -51,18 +53,19 @@ function Contact() {
             name="from_name"
             placeholder="اكتب اسمك"
             required
-          />
+            />
           <input
             type="text"
             name="phone"
             placeholder="اكتب رقم الواتس"
             required
-          />
+            />
           <input type="email" name="email" placeholder="اكتب ايميلك" required />
 
           <button type="submit">إرسال</button>
         </form>
       </div>
+            </section>
     </>
   );
 }

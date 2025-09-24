@@ -14,7 +14,7 @@ function Banner() {
   <li>سجلي دلوقتي علشان تكوني من الأوائل اللي هايخدو مكافآت</li>
 </ul>
 
-        <button className="banner-btn">ابدئي الآن</button>
+<a href="#contact" className="banner-btn">ابدئي الآن</a>
       </div>
 
       <div className="banner-img">

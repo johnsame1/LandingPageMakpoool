@@ -55,6 +55,7 @@ background: linear-gradient(360deg,#b76cfd, #e869c6);
   display: block;
   margin: 0 auto;
   font-weight: bold;
+  text-align: center;
 }
 
 .banner-btn:hover {
@@ -104,7 +105,7 @@ background: linear-gradient(90deg,#b76cfd, #e869c6);
 /* موبايل */
 @media (max-width: 768px) {
   .banner {
-    flex-direction: column;
+    flex-direction: column-reverse;
     text-align: center;
     padding: 2rem;
   }
